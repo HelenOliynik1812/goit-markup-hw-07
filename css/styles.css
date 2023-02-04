@@ -12,6 +12,75 @@
   --hero-background: #2e2f42;
   --transition-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.container{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+    background-color: #434455;
+
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 415px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 766px;
+  
+  }
+}
+@media screen and (min-width:1200px) {
+  .container {
+    width: 1158px;}}
+/*0-767*/
+    @media screen and (max-width:767px) {
+      .header-list{
+  display: none;
+}
+      
+    }
+     @media screen and (max-width:767px) {
+      .header-contact{ 
+  display: none;}
+      
+    }
+    .header{
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+   .header-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+    
+.mobile-menu-open{
+  background-color: transparent;
+ border: none;
+ padding: 0;
+line-height: 0;
+}
+.mobile-menu{
+  position: fixed;
+  width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: 1000;
+background-color: var(--accent-color);
+}
+.mobile-menu-close{
+ background-color:transparent;
+ border: none;
+ padding: 0;
+line-height: 0;
+}
+
+/*
 html {
   box-sizing: border-box;
 }
@@ -36,8 +105,8 @@ html {
 .header {
   background: var(--default-bg-color);
   border-bottom: 1px solid var(--accent-color);
-}
-
+}*/
+/*
 .header-body {
   display: flex;
   align-items: center;
@@ -57,7 +126,7 @@ html {
 }
 
 .header-web {
-  /* IRIS */
+
   color: var(--primary-brand-color);
 }
 .header-studio {
@@ -70,7 +139,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* NAVY BLUE */
+ 
   color: var(--hero-background);
 }
 
@@ -147,6 +216,7 @@ html {
 .header-mailto :focus {
   color: var(--pressed-state-color);
 }
+*/
 /*.visually-hidden{
     position: absolute;
     width: 1px;
@@ -160,7 +230,7 @@ html {
     overflow: hidden;
   }
 */
-
+/*
 .main {
 }
 .container {
@@ -193,8 +263,7 @@ html {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  /* or 107% */
-
+ 
   letter-spacing: 0.02em;
   color: #ffffff;
   color: var(--active-text-color);
@@ -206,7 +275,7 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  /* identical to box height */
+  
   letter-spacing: 0.04em;
   color: var(--active-text-color);
   background: var(--primary-brand-color);
@@ -265,9 +334,9 @@ html {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  /* identical to box height, or 120% */
+ 
   letter-spacing: 0.02em;
-  /* NAVY BLUE */
+ 
   color: var(--dark-navy-blue);
   margin-top: 0;
   margin-bottom: 8px;
@@ -275,9 +344,9 @@ html {
 .hero-post-title {
   font-size: 16px;
   line-height: 1.5;
-  /* or 150% */
+
   letter-spacing: 0.02em;
-  /* SLATE */
+
   color: var(--primary-text-color);
   margin-top: 0;
   margin-bottom: 0;
@@ -292,10 +361,10 @@ html {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  /* identical to box height, or 111% */
+  
   text-align: center;
   letter-spacing: 0.02em;
-  /* NAVY BLUE */
+ 
   color: var(--dark-navy-blue);
   margin-top: 0;
   margin-bottom: 72px;
@@ -329,7 +398,7 @@ html {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  /* identical to box height, or 111% */
+  
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--hero-background);
@@ -367,9 +436,9 @@ html {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  /* identical to box height, or 120% */
+
   letter-spacing: 0.02em;
-  /* NAVY BLUE */
+
   color: var(--dark-navy-blue);
   margin: 0 auto;
   margin-bottom: 8px;
@@ -377,9 +446,9 @@ html {
 .team-profession {
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
+
   letter-spacing: 0.02em;
-  /* SLATE */
+
   color: var(--primary-text-color);
   margin: 0;
   margin-bottom: 8px;
@@ -413,7 +482,7 @@ html {
   fill: var(--active-text-color);
 }
 
-/*Portfolio*/
+
 .main-content {
 }
 .caption {
@@ -425,7 +494,7 @@ html {
 .caption-list {
   margin: auto;
   display: flex;
-  /*outline: 1px solid red;*/
+ 
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
@@ -454,7 +523,7 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
+
   letter-spacing: 0.04em;
   background: var(--light-mode-backgrounds);
   color: var(--primary-brand-color);
@@ -474,7 +543,7 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
+
   letter-spacing: 0.04em;
   background: var(--pressed-state-color);
   color: var(--active-text-color);
@@ -538,7 +607,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  /* or 150% */
+  
   letter-spacing: 0.02em;
   position: absolute;
   left: 0;
@@ -546,7 +615,6 @@ html {
   width: 100%;
   height: 100%;
   color: var(--light-mode-backgrounds);
-  /*overflow-y: scroll;*/
   transform: translate(0, 100%);
   transition: transform var(--transition-cubic);
   padding-top: 40px;
@@ -576,9 +644,9 @@ html {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  /* identical to box height, or 120% */
+
   letter-spacing: 0.02em;
-  /* NAVY BLUE */
+
   color: var(--hero-background);
 
   margin: 0 auto;
@@ -586,9 +654,9 @@ html {
 .content-direction {
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
+
   letter-spacing: 0.02em;
-  /* SLATE */
+
   color: var(--primary-text-color);
   margin: 0 auto;
   margin-top: 8px;
@@ -663,7 +731,7 @@ html {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16px;
-  /* identical to box height */
+
   letter-spacing: 0.03em;
   color: var(--light-mode-backgrounds);
   transition: color var(--transition-cubic);
@@ -687,9 +755,9 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  /* or 150% */
+
   letter-spacing: 0.02em;
-  /* CORNFLOWER */
+
   color: var(--accent-color);
   margin-top: 16px;
   margin-bottom: 0;
@@ -702,7 +770,7 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
+
   letter-spacing: 0.02em;
   color: var(--active-text-color);
   margin-top: 0;
@@ -746,7 +814,7 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5px;
-  /* identical to box height, or 150% */
+ 
   letter-spacing: 0.02em;
   color: var(--active-text-color);
   margin: 0;
@@ -764,7 +832,7 @@ html {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
-  /* identical to box height, or 200% */
+ 
   align-items: center;
   letter-spacing: 0.04em;
   background-color: transparent;
@@ -793,7 +861,7 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
+ 
   display: flex;
   align-items: center;
   text-align: left;
@@ -817,7 +885,9 @@ html {
 .subscribe-btn:focus {
   background-color: var(--pressed-state-color);
 }
-/*-----modal----*/
+*/
+                    /*-----Modal----*/
+                    /*
 .backdrop {
   position: fixed;
   top: 0;
@@ -844,10 +914,13 @@ html {
   background: #fcfcfc;
   padding: 24px;
 }
+*/
+/*
 .modal-close-btn {
   /*position: absolute;
   top: 24px;
   right: 24px;*/
+  /*
   display: flex;
   justify-content: center;
   align-items: center;
@@ -877,11 +950,8 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
   text-align: center;
   letter-spacing: 0.02em;
-  /* NAVY 
-LUE */
   color: var(--hero-background);
   margin-top: 24px;
   margin-bottom: 13px;
@@ -927,7 +997,7 @@ LUE */
   font-size: 12px;
   color: rgba(117, 117, 117, 0.5);
 }
-
+*/
 /*
 .modal-imput:not(:placeholder-shown):not(:focus):valid { 
   background-color:rgba(121, 195, 224, 0.2);
@@ -935,12 +1005,13 @@ LUE */
 .modal-imput:not(:placeholder-shown):not(:focus):invalid {
   background-color: rgba(121, 15, 92, 0.24);
 }*/
+/*
 .modal-name-span {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
-  /* identical to box height, or 133% */
+  
   letter-spacing: 0.04em;
   color: var(--subtle-text);
 }
@@ -949,9 +1020,9 @@ LUE */
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  /* identical to box height */
+
   letter-spacing: 0.01em;
-  /* LIGHT SLATE */
+  
   color: var(--subtle-text);
 }
 .imput-wrap {
@@ -972,7 +1043,7 @@ LUE */
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
-  /* identical to box height, or 133% */
+ 
   letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
   transition: border var(--transition-cubic);
@@ -981,7 +1052,7 @@ LUE */
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
-  /* identical to box height, or 133% */
+
   letter-spacing: 0.04em;
 }
 
@@ -1018,6 +1089,7 @@ align-items: center;
   margin-right: 8px;
 
 }*/
+/*
 .checkbox {
   margin-top: 16px;
   margin-bottom: 24px;
@@ -1027,7 +1099,7 @@ align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
-  /* identical to box height, or 133% */
+
   letter-spacing: 0.04em;
   color: #757575;
   display: flex;
@@ -1083,6 +1155,7 @@ align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  /* identical to box height, or 133% */
+  
   letter-spacing: 0.04em;
 }
+*/

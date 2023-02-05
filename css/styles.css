@@ -16,7 +16,7 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-    background-color: #434455;
+ background-color: #434455;
 
 }
 @media screen and (min-width: 480px) {
@@ -720,7 +720,8 @@ html {
 .customers-icon-link:focus .customers-icon-icon {
   fill: var(--pressed-state-color);
 }
-
+ /*-----Footer----*/
+ /*
 .footer {
   background: var(--dark-navy-blue);
   padding-top: 100px;
@@ -895,8 +896,8 @@ html {
   background-color: var(--pressed-state-color);
 }
 */
-                    /*-----Modal----*/
-                    /*
+ /*-----Modal----*/
+  /*
 .backdrop {
   position: fixed;
   top: 0;

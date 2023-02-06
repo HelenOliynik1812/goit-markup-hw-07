@@ -12,6 +12,14 @@
   --hero-background: #2e2f42;
   --transition-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
 .container{
   width: 100%;
   padding-left: 15px;
@@ -91,12 +99,10 @@ position: absolute;
  top: 0;
  right: 0;
  padding: 0;
+ bottom: 16px;
 line-height: 0;
-
- /*position: absolute;
-  top: 24px;
-  right: 24px;*/
- 
+top: 40px;
+right: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,24 +134,53 @@ line-height: 0;
   padding-bottom: 40px;
 }
 .header-mobile {
+  margin-bottom:284px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+
+
+  
+  
 }
-.header-mobile-item {
+.header-mobile-item{
+ 
+   padding-top: 0;
+  padding-bottom: 40px;
 }
-.header-mobile-link {
+.header-mobile-item:nth-child(3n) {
+  padding-bottom: 0;}
+
+.header-mobile-link  {
+   color: var(--hero-background);
+   transition: color var(--transition-cubic);
+    
+}
+.header-mobile-link:hover,
+.header-mobile-link:focus {
+  color: var(--pressed-state-color);
 }
 
 
-.hheader-mobile-link {
+
+
+
+.header-mobil-contact{
+
 }
 .header-mobile-mail {
 }
 .header-mobile-tel {
 }
+.header-mobil-socia_{}
 .mobil-social {
 }
 .mobil-social-icon {
 }
-/*
+
 html {
   box-sizing: border-box;
 }
@@ -159,18 +194,11 @@ html {
   background-color: var(--default-bg-color);
   color: var(--primary-text-color);
 }
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.link {
-  text-decoration: none;
-}
+
 .header {
   background: var(--default-bg-color);
   border-bottom: 1px solid var(--accent-color);
-}*/
+}
 /*
 .header-body {
   display: flex;

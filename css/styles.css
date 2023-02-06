@@ -12,6 +12,20 @@
   --hero-background: #2e2f42;
   --transition-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--default-bg-color);
+  color: var(--primary-text-color);
+}
 .list {
   list-style: none;
   margin: 0;
@@ -197,43 +211,35 @@ color:var(--pressed-state-color)
   color: var(--pressed-state-color);
 }
 
-.header-mobil-socia_{}
+.header-mobil-socia_{
+   display:flex;
+  justify-content: center;
+  gap: 24px;
+}
 .mobil-social {
+  
+  flex-direction: row;
+  
+}
+.mobil-social-item {
+  width: 40px;
+  height: 40px;
+ 
+}
+
+.mobil-social-icon {
   width: 100%;
   height: 100%;
   background-color: var(--primary-brand-color);
   border-radius: 50%;
-  display: flexbox;
+
   align-items: center;
   justify-content: center;
   transition: background-color var(--transition-cubic);
-}
-.mobil-social-list {
-  display:block;
-  justify-content: center;
-  gap: 24px;
-}
-.team-icon-item {
-  width: 40px;
-  height: 40px;
-}
-.mobil-social-icon {
+   flex-direction: row;
 }
 
 
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-.body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--default-bg-color);
-  color: var(--primary-text-color);
-}
 /*
 .header {
   background: var(--default-bg-color);
@@ -928,13 +934,8 @@ html {
   justify-content: center;
   transition: background-color var(--transition-cubic);
 }
-.footer-icon-link:hover.footer-icon-link,
-.footer-icon-link:focus.footer-icon-link {
-  background: var(--success-color);
-}
-.footer-icon-icon {
-  fill: var(--active-text-color);
-}
+
+
 .subscribe-form {
   display: flex;
   margin-left: 80px;

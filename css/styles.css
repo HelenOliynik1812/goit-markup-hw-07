@@ -24,7 +24,7 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
- background-color: #434455;
+
 
 }
 @media screen and (min-width: 480px) {
@@ -40,6 +40,12 @@
     width: 766px;
   
   }
+  .mobile-menu{
+        display: none;
+      }
+      .mobile-menu-open{
+        display: none;
+      }
 }
 @media screen and (min-width:1200px) {
   .container {
@@ -47,15 +53,15 @@
 /*0-767*/
     @media screen and (max-width:767px) {
       .header-list{
-  display: none;
+  display: none; 
 }
       
     }
      @media screen and (max-width:767px) {
       .header-contact{ 
-  display: none;}
-      
+  display: none;}      
     }
+
     .header{
       padding-top: 24px;
       padding-bottom: 24px;
@@ -67,10 +73,15 @@
    }
     
 .mobile-menu-open{
-  background-color: transparent;
+  
  border: none;
  padding: 0;
 line-height: 0;
+ background-color: blueviolet;
+}
+.mobile-menu-open_icon{
+  background-color: blueviolet;
+  fill: var(--dark-navy-blue);
 }
 .mobile-menu {
   position: fixed;
@@ -81,7 +92,6 @@ left: 0;
 z-index: 1000;
 background-color: var(--accent-color);
 opacity: 0;
-
 visibility: hidden;
 pointer-events: none;
 transition: opacity var(--transition-cubic), visibility var(--transition-cubic);
@@ -90,7 +100,6 @@ transition: opacity var(--transition-cubic), visibility var(--transition-cubic);
   opacity: 1;
 visibility: visible;
 pointer-events: auto;
-
 }
 .mobile-menu-close{
 position: absolute;
@@ -141,27 +150,25 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
-
-
-  
   
 }
 .header-mobile-item{
+padding-top: 0;
+padding-bottom: 40px;
+
  
-   padding-top: 0;
-  padding-bottom: 40px;
 }
 .header-mobile-item:nth-child(3n) {
   padding-bottom: 0;}
 
 .header-mobile-link  {
-   color: var(--hero-background);
-   transition: color var(--transition-cubic);
+color: var(--dark-navy-blue);
+transition: color var(--transition-cubic);
     
 }
 .header-mobile-link:hover,
 .header-mobile-link:focus {
-  color: var(--pressed-state-color);
+color:var(--pressed-state-color)
 }
 
 
@@ -169,17 +176,33 @@ letter-spacing: 0.02em;
 
 
 .header-mobil-contact{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  
 
 }
-.header-mobile-mail {
+.header-mobile-mail,.header-mobile-tel{
+  color: var(--primary-text-color);
+  transition: color var(--transition-cubic);
 }
-.header-mobile-tel {
+
+.header-mobile-mail:hover,
+.header-mobile-mail:focus {
+  color: var(--pressed-state-color);
 }
+.header-mobile-tel:hover,
+.header-mobile-tel:focus {
+  color: var(--pressed-state-color);
+}
+
 .header-mobil-socia_{}
 .mobil-social {
 }
 .mobil-social-icon {
 }
+
 
 html {
   box-sizing: border-box;
@@ -194,12 +217,12 @@ html {
   background-color: var(--default-bg-color);
   color: var(--primary-text-color);
 }
-
+/*
 .header {
   background: var(--default-bg-color);
   border-bottom: 1px solid var(--accent-color);
 }
-/*
+
 .header-body {
   display: flex;
   align-items: center;

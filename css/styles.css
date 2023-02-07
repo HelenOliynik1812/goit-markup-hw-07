@@ -247,7 +247,8 @@ color:var(--primary-text-color);
   justify-self: start;
   gap: 56px;
 }
-.mobil-social { width: 100%;
+.mobil-social { 
+  width: 100%;
   height: 100%;
   background-color: var(--primary-brand-color);
   border-radius: 50%;
@@ -257,6 +258,10 @@ color:var(--primary-text-color);
   transition: background-color var(--transition-cubic);
   
 }
+.mobil-social:hover,
+.mobil-social:focus {
+  background-color: var(--pressed-state-color);
+}
 .mobil-social-item {
   width: 40px;
   height: 40px;
@@ -264,7 +269,7 @@ color:var(--primary-text-color);
 }
 
 .mobil-social-icon {
-  
+ fill: var(--default-bg-color); 
 }
 
 

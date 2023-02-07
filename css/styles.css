@@ -256,7 +256,7 @@ color:var(--primary-text-color);
   align-items: center;
   justify-content: center;
   transition: background-color var(--transition-cubic);
-  
+   fill: var(--default-bg-color);
 }
 .mobil-social:hover,
 .mobil-social:focus {
@@ -269,7 +269,7 @@ color:var(--primary-text-color);
 }
 
 .mobil-social-icon {
- fill: var(--default-bg-color); 
+ 
 }
 
 
